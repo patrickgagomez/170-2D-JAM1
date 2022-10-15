@@ -11,10 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Camera cam;
 
+    public bool switchScene = false;
     Vector2 movement;
     Vector2 mousePos;
-
-    private int current_scene;
 
     private float moveSpeed = 8f;
     private float horizontal;
@@ -25,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        current_scene = SceneManager.GetActiveScene().buildIndex;
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>() as Camera;
 
         body = transform;
@@ -38,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         Movement();
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        current_scene = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void InputCollection()
@@ -74,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "LevelExit")
         {
-            SceneManager.LoadScene(current_scene + 1);
+            switchScene = true;
         }
     }
 }
