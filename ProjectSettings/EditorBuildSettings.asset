@@ -10,16 +10,22 @@ EditorBuildSettings:
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/shootingproto.unity
-    guid: 7d9d62988a554784d8e5f88cbca8b6d4
-  - enabled: 1
-    path: Assets/Scenes/shootingproto2.unity
     guid: 9b85180491593bf4cb5a4b7c5a325372
   - enabled: 1
+    path: Assets/Scenes/shootingproto2.unity
+    guid: d8521d55da398c84ba4963ff6fe788ae
+  - enabled: 1
     path: Assets/Scenes/shootingproto3.unity
-    guid: 9f74b89d22707354690ab724676ec9d2
+    guid: 22cd78567b9a48e47a2830d5cb6dca1f
   - enabled: 1
     path: Assets/Scenes/shootingproto4.unity
     guid: eee47abcc4f08e842b2d54cd10cabb5f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
