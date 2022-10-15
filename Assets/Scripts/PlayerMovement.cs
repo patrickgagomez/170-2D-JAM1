@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
 
-    public int current_scene = SceneManager.GetActiveScene().buildIndex;
+    //public int current_scene = SceneManager.GetActiveScene().buildIndex;
 
     // Update is called once per frame
     void Update()
