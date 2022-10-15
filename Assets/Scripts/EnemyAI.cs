@@ -31,7 +31,7 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         //move towards the player
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, (float)0.003);
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, (float)0.003 * speed);
         if (shouldRotate)
         {
             transform.rotation = Quaternion.LookRotation(target.transform.position - transform.position);

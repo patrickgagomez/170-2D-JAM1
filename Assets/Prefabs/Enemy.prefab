@@ -99,13 +99,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e9c65fe54165b44b7bc6793e7bf178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   shouldRotate: 1
   chasing:
     serializedVersion: 2
     m_Bits: 8
   dir: {x: 0, y: 0, z: 0}
-  knockbackForce: 2
+  knockbackForce: 5
 --- !u!50 &2948676447409946086
 Rigidbody2D:
   serializedVersion: 4
