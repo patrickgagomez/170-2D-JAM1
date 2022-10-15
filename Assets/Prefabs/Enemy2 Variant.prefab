@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769364886235412477, guid: bce068fe61c5bcc4ea5cb751bba5825b, type: 3}
       propertyPath: m_Name
-      value: Enemy2
+      value: Enemy2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7389988857005210977, guid: bce068fe61c5bcc4ea5cb751bba5825b, type: 3}
       propertyPath: m_RootOrder
@@ -91,5 +91,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3e2b135aa6a4d4043bcf2bd6b3bc4fcd, type: 3}
+    - target: {fileID: 8209342412050502340, guid: bce068fe61c5bcc4ea5cb751bba5825b, type: 3}
+      propertyPath: knockbackForce
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce068fe61c5bcc4ea5cb751bba5825b, type: 3}

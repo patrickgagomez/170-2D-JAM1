@@ -31,7 +31,7 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         //move towards the player
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, (float)0.003);
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, (float)0.003);
         if (shouldRotate)
         {
             transform.rotation = Quaternion.LookRotation(target.transform.position - transform.position);
@@ -39,13 +39,17 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
             Rigidbody2D targetRb = target.GetComponent<Rigidbody2D>();
-            Vector2 knockback = (target.transform.position - transform.position).normalized * knockbackForce;
-            targetRb.AddForce(knockback, ForceMode2D.Impulse);
+            if(targetRb != null)
+            {
+                Vector2 knockback = (target.transform.position - transform.position).normalized * knockbackForce;
+                targetRb.AddForce(knockback, ForceMode2D.Impulse);
+            }
+            
         }
     }
 }
