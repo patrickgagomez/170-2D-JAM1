@@ -17,11 +17,13 @@ public class BulletScript : MonoBehaviour
         GameObject nextLevel = Instantiate(hole, transform.position, Quaternion.identity);
         nextLevel.GetComponent<Animator>().SetInteger("style", SceneManager.GetActiveScene().buildIndex);
         Destroy(effect, particleTimer);
-        Destroy(gameObject);
+        
         if (collision.gameObject.tag == "Enemy")
         {
+            GetComponent<AudioSource>().Play();
             Destroy(collision.gameObject);
         }
+        Destroy(gameObject);
     }
 
 }
