@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e9c65fe54165b44b7bc6793e7bf178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 9
   shouldRotate: 1
   chasing:
     serializedVersion: 2

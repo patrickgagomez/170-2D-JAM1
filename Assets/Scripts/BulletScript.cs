@@ -18,8 +18,10 @@ public class BulletScript : MonoBehaviour
         nextLevel.GetComponent<Animator>().SetInteger("style", SceneManager.GetActiveScene().buildIndex);
         Destroy(effect, particleTimer);
         Destroy(gameObject);
+        GetComponent<AudioSource>().Play();
         if (collision.gameObject.tag == "Enemy")
         {
+
             Destroy(collision.gameObject);
         }
     }

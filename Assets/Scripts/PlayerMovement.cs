@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
 
-    private float moveSpeed = 8f;
+    private float moveSpeed = 5f;
     private float horizontal;
     private float vertical;
     private float diagSpeedLimit = 0.7f;
