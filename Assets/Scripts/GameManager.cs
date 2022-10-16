@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         //spawn player
         newPlayer = Instantiate(playerPrefab, new Vector3(Random.Range(-6f, 6f), 0), Quaternion.identity);
         //set the player anim
-        newPlayer.GetComponent<Animator>().SetInteger("style", SceneManager.GetActiveScene().buildIndex);
+        newPlayer.GetComponent<Animator>().SetInteger("style", current_scene);
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
         GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-6f, 6f), 0), Quaternion.identity);
-        newEnemy.GetComponent<Animator>().SetInteger("style", SceneManager.GetActiveScene().buildIndex);
+        newEnemy.GetComponent<Animator>().SetInteger("style", current_scene);
         StartCoroutine(spawnEnemy(spawnInterval, enemy));
         if (spawnInterval > 0.5)
         {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28bb87c5a8531e94c9a6b039cb77c249
+guid: 4bc73fbf270cc7b4f841f40b4e84a372
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet1_0
+      name: bulletSketch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,8 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ef6a9e56540954fba568e41d6684cc
-      internalID: 793974415
+      spriteID: 343f3122829d8ee4881a203d066711b9
+      internalID: 79816431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSketch_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8163eadd943361438264629b4dc7d24
+      internalID: 9032347
       vertices: []
       indices: 
       edges: []
@@ -148,7 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bullet1_0: 793974415
+      bulletSketch_1: 9032347
+      bulletSketch_0: 79816431
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

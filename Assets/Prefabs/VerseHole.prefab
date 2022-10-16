@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7402040232119895494}
   - component: {fileID: 72588594147851064}
   - component: {fileID: 3808584956893231806}
+  - component: {fileID: 4449102340724014667}
   m_Layer: 0
   m_Name: VerseHole
   m_TagString: LevelExit
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149591194938463253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.78, y: -0.45, z: 0}
+  m_LocalPosition: {x: -3.78, y: -0.46, z: 0}
   m_LocalScale: {x: 0.7760505, y: 0.7616087, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98,6 +99,26 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.091752455, y: 0.0013351414}
+  m_Offset: {x: 0.018859187, y: -0.0069176913}
   serializedVersion: 2
-  m_Radius: 1.3027307
+  m_Radius: 0.233629
+--- !u!95 &4449102340724014667
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149591194938463253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d9b379f9f9a6eb468c3ce17667ede1c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
