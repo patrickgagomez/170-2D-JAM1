@@ -45,8 +45,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
+        Vector2 pos = new Vector3(Random.Range(-10f, 10f), Random.Range(-6f, 6f));
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-6f, 6f), 0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-10f, 10f), Random.Range(-6f, 6f)), Quaternion.identity);
         newEnemy.GetComponent<Animator>().SetInteger("style", current_scene);
         StartCoroutine(spawnEnemy(spawnInterval, enemy));
         if (spawnInterval > 0.5)
