@@ -33,7 +33,13 @@ public class GameManager : MonoBehaviour
         current_scene = SceneManager.GetActiveScene().buildIndex;
         if (newPlayer.GetComponent<PlayerMovement>().switchScene)
         {
-            SceneManager.LoadScene(current_scene + 1);
+            if(current_scene < 4)
+            {
+                SceneManager.LoadScene(current_scene + 1);
+            } else {
+                SceneManager.LoadScene(0);
+            }
+            
         }
     }
 
